@@ -18,3 +18,7 @@ with open('test_input_b','r') as f:
     test_input = f.read()
 test_spreadsheet = spreadsheet_reader(test_input)
 assert(spreadsheet_checksum(test_spreadsheet) == 9)
+
+with open('challenge_input','r') as f:
+    challenge_input = f.read()
+print(spreadsheet_checksum(spreadsheet_reader(challenge_input)))
